@@ -1,0 +1,253 @@
+Reusing configuration cache.
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project 'qa-final-project'
+------------------------------------------------------------
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- org.junit.jupiter:junit-jupiter:5.9.3 -> 5.10.1
+|    +--- org.junit:junit-bom:5.10.1
+|    |    +--- org.junit.jupiter:junit-jupiter:5.10.1 (c)
+|    |    +--- org.junit.platform:junit-platform-commons:1.10.1 (c)
+|    |    +--- org.junit.platform:junit-platform-engine:1.10.1 (c)
+|    |    +--- org.junit.jupiter:junit-jupiter-api:5.10.1 (c)
+|    |    +--- org.junit.jupiter:junit-jupiter-params:5.10.1 (c)
+|    |    \--- org.junit.jupiter:junit-jupiter-engine:5.10.1 (c)
+|    +--- org.junit.jupiter:junit-jupiter-api:5.10.1
+|    |    +--- org.junit:junit-bom:5.10.1 (*)
+|    |    +--- org.opentest4j:opentest4j:1.3.0
+|    |    \--- org.junit.platform:junit-platform-commons:1.10.1
+|    |         \--- org.junit:junit-bom:5.10.1 (*)
+|    +--- org.junit.jupiter:junit-jupiter-params:5.10.1
+|    |    +--- org.junit:junit-bom:5.10.1 (*)
+|    |    \--- org.junit.jupiter:junit-jupiter-api:5.10.1 (*)
+|    \--- org.junit.jupiter:junit-jupiter-engine:5.10.1
+|         +--- org.junit:junit-bom:5.10.1 (*)
+|         +--- org.junit.platform:junit-platform-engine:1.10.1
+|         |    +--- org.junit:junit-bom:5.10.1 (*)
+|         |    +--- org.opentest4j:opentest4j:1.3.0
+|         |    \--- org.junit.platform:junit-platform-commons:1.10.1 (*)
+|         \--- org.junit.jupiter:junit-jupiter-api:5.10.1 (*)
++--- io.cucumber:cucumber-java:7.15.0
+|    +--- io.cucumber:cucumber-core:7.15.0
+|    |    +--- io.cucumber:cucumber-gherkin:7.15.0
+|    |    |    \--- io.cucumber:cucumber-plugin:7.15.0
+|    |    |         \--- org.apiguardian:apiguardian-api:1.1.2
+|    |    +--- io.cucumber:cucumber-gherkin-messages:7.15.0
+|    |    |    +--- io.cucumber:gherkin:26.2.0
+|    |    |    |    \--- io.cucumber:messages:[19.1.4,23.0.0) -> 22.0.0
+|    |    |    \--- io.cucumber:cucumber-gherkin:7.15.0 (*)
+|    |    +--- io.cucumber:messages:22.0.0
+|    |    +--- io.cucumber:tag-expressions:6.0.0
+|    |    +--- io.cucumber:cucumber-expressions:17.0.1
+|    |    |    \--- org.apiguardian:apiguardian-api:1.1.2
+|    |    +--- io.cucumber:datatable:7.15.0
+|    |    |    \--- org.apiguardian:apiguardian-api:1.1.2
+|    |    +--- io.cucumber:cucumber-plugin:7.15.0 (*)
+|    |    +--- io.cucumber:docstring:7.15.0
+|    |    |    \--- org.apiguardian:apiguardian-api:1.1.2
+|    |    +--- io.cucumber:html-formatter:20.4.0
+|    |    |    \--- io.cucumber:messages:[18.0.0,23.0.0) -> 22.0.0
+|    |    +--- io.cucumber:junit-xml-formatter:0.2.0
+|    |    |    \--- io.cucumber:messages:[21.0.1,23.0.0) -> 22.0.0
+|    |    +--- io.cucumber:ci-environment:10.0.0
+|    |    \--- org.apiguardian:apiguardian-api:1.1.2
+|    \--- org.apiguardian:apiguardian-api:1.1.2
++--- io.cucumber:cucumber-junit-platform-engine:7.15.0
+|    +--- io.cucumber:cucumber-core:7.15.0 (*)
+|    \--- org.junit.platform:junit-platform-engine:1.10.1 (*)
++--- io.rest-assured:rest-assured:5.3.2
+|    +--- org.apache.groovy:groovy:4.0.11
+|    |    \--- org.apache.groovy:groovy-bom:4.0.11
+|    |         +--- org.apache.groovy:groovy:4.0.11 (c)
+|    |         +--- org.apache.groovy:groovy-json:4.0.11 (c)
+|    |         \--- org.apache.groovy:groovy-xml:4.0.11 (c)
+|    +--- org.apache.groovy:groovy-xml:4.0.11
+|    |    +--- org.apache.groovy:groovy-bom:4.0.11 (*)
+|    |    \--- org.apache.groovy:groovy:4.0.11 (*)
+|    +--- org.apache.httpcomponents:httpclient:4.5.13
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.13
+|    |    +--- commons-logging:commons-logging:1.2
+|    |    \--- commons-codec:commons-codec:1.11
+|    +--- org.apache.httpcomponents:httpmime:4.5.13
+|    |    \--- org.apache.httpcomponents:httpclient:4.5.13 (*)
+|    +--- org.hamcrest:hamcrest:2.2
+|    +--- org.ccil.cowan.tagsoup:tagsoup:1.2.1
+|    +--- io.rest-assured:json-path:5.3.2
+|    |    +--- org.apache.groovy:groovy-json:4.0.11
+|    |    |    +--- org.apache.groovy:groovy-bom:4.0.11 (*)
+|    |    |    \--- org.apache.groovy:groovy:4.0.11 (*)
+|    |    +--- org.apache.groovy:groovy:4.0.11 (*)
+|    |    \--- io.rest-assured:rest-assured-common:5.3.2
+|    |         +--- org.apache.groovy:groovy:4.0.11 (*)
+|    |         \--- org.apache.commons:commons-lang3:3.11 -> 3.12.0
+|    \--- io.rest-assured:xml-path:5.3.2
+|         +--- org.apache.groovy:groovy-xml:4.0.11 (*)
+|         +--- org.apache.groovy:groovy:4.0.11 (*)
+|         +--- io.rest-assured:rest-assured-common:5.3.2 (*)
+|         +--- org.apache.commons:commons-lang3:3.11 -> 3.12.0
+|         \--- org.ccil.cowan.tagsoup:tagsoup:1.2.1
++--- org.seleniumhq.selenium:selenium-java:4.21.0
+|    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    +--- org.seleniumhq.selenium:selenium-chrome-driver:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-chromium-driver:4.21.0
+|    |    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0
+|    |    |    |    \--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0
+|    |    |         +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    |         +--- com.google.guava:guava:33.2.0-jre
+|    |    |         |    +--- com.google.guava:failureaccess:1.0.2
+|    |    |         |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    |         |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    |         |    +--- org.checkerframework:checker-qual:3.42.0
+|    |    |         |    \--- com.google.errorprone:error_prone_annotations:2.26.1
+|    |    |         +--- io.opentelemetry.semconv:opentelemetry-semconv:1.25.0-alpha
+|    |    |         +--- io.opentelemetry:opentelemetry-api:1.38.0
+|    |    |         |    \--- io.opentelemetry:opentelemetry-context:1.38.0
+|    |    |         +--- io.opentelemetry:opentelemetry-context:1.38.0
+|    |    |         +--- io.opentelemetry:opentelemetry-exporter-logging:1.38.0
+|    |    |         |    +--- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.38.0
+|    |    |         |    |    \--- io.opentelemetry:opentelemetry-sdk:1.38.0
+|    |    |         |    |         +--- io.opentelemetry:opentelemetry-api:1.38.0 (*)
+|    |    |         |    |         +--- io.opentelemetry:opentelemetry-sdk-common:1.38.0
+|    |    |         |    |         |    \--- io.opentelemetry:opentelemetry-api:1.38.0 (*)
+|    |    |         |    |         +--- io.opentelemetry:opentelemetry-sdk-trace:1.38.0
+|    |    |         |    |         |    +--- io.opentelemetry:opentelemetry-api:1.38.0 (*)
+|    |    |         |    |         |    \--- io.opentelemetry:opentelemetry-sdk-common:1.38.0 (*)
+|    |    |         |    |         +--- io.opentelemetry:opentelemetry-sdk-metrics:1.38.0
+|    |    |         |    |         |    +--- io.opentelemetry:opentelemetry-api-incubator:1.38.0-alpha
+|    |    |         |    |         |    |    \--- io.opentelemetry:opentelemetry-api:1.38.0 (*)
+|    |    |         |    |         |    +--- io.opentelemetry:opentelemetry-api:1.38.0 (*)
+|    |    |         |    |         |    \--- io.opentelemetry:opentelemetry-sdk-common:1.38.0 (*)
+|    |    |         |    |         \--- io.opentelemetry:opentelemetry-sdk-logs:1.38.0
+|    |    |         |    |              +--- io.opentelemetry:opentelemetry-api-incubator:1.38.0-alpha (*)
+|    |    |         |    |              +--- io.opentelemetry:opentelemetry-api:1.38.0 (*)
+|    |    |         |    |              \--- io.opentelemetry:opentelemetry-sdk-common:1.38.0 (*)
+|    |    |         |    \--- io.opentelemetry:opentelemetry-sdk:1.38.0 (*)
+|    |    |         +--- io.opentelemetry:opentelemetry-sdk-common:1.38.0 (*)
+|    |    |         +--- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.38.0 (*)
+|    |    |         +--- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.38.0
+|    |    |         |    +--- io.opentelemetry:opentelemetry-api-incubator:1.38.0-alpha (*)
+|    |    |         |    +--- io.opentelemetry:opentelemetry-sdk:1.38.0 (*)
+|    |    |         |    \--- io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.38.0 (*)
+|    |    |         +--- io.opentelemetry:opentelemetry-sdk-trace:1.38.0 (*)
+|    |    |         +--- io.opentelemetry:opentelemetry-sdk:1.38.0 (*)
+|    |    |         +--- net.bytebuddy:byte-buddy:1.14.15
+|    |    |         +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    |         +--- org.seleniumhq.selenium:selenium-http:4.21.0
+|    |    |         |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    |         |    +--- dev.failsafe:failsafe:3.3.2
+|    |    |         |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    |         |    \--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    |         +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    |         +--- org.seleniumhq.selenium:selenium-manager:4.21.0
+|    |    |         |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    |         |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    |         |    \--- org.seleniumhq.selenium:selenium-os:4.21.0
+|    |    |         |         +--- org.apache.commons:commons-exec:1.4.0
+|    |    |         |         \--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    |         \--- org.seleniumhq.selenium:selenium-os:4.21.0 (*)
+|    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    +--- org.seleniumhq.selenium:selenium-manager:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-devtools-v123:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-devtools-v124:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-devtools-v125:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-devtools-v85:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-edge-driver:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-chromium-driver:4.21.0 (*)
+|    |    +--- org.seleniumhq.selenium:selenium-manager:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-firefox-driver:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-devtools-v85:4.21.0 (*)
+|    |    +--- org.seleniumhq.selenium:selenium-http:4.21.0 (*)
+|    |    +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|    |    +--- org.seleniumhq.selenium:selenium-manager:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-ie-driver:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    +--- org.seleniumhq.selenium:selenium-manager:4.21.0 (*)
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    +--- org.seleniumhq.selenium:selenium-safari-driver:4.21.0
+|    |    +--- com.google.auto.service:auto-service-annotations:1.1.1
+|    |    +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|    |    \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
+|    \--- org.seleniumhq.selenium:selenium-support:4.21.0
+|         +--- com.google.auto.service:auto-service-annotations:1.1.1
+|         +--- com.google.guava:guava:33.2.0-jre (*)
+|         +--- net.bytebuddy:byte-buddy:1.14.15
+|         +--- org.seleniumhq.selenium:selenium-api:4.21.0
+|         +--- org.seleniumhq.selenium:selenium-json:4.21.0 (*)
+|         \--- org.seleniumhq.selenium:selenium-remote-driver:4.21.0 (*)
++--- io.github.bonigarcia:webdrivermanager:5.4.1
+|    +--- org.slf4j:slf4j-api:2.0.7
+|    +--- com.google.code.gson:gson:2.10.1
+|    +--- com.github.docker-java:docker-java:3.3.2
+|    |    +--- com.github.docker-java:docker-java-core:3.3.2
+|    |    |    +--- com.github.docker-java:docker-java-api:3.3.2
+|    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.3
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.30 -> 2.0.7
+|    |    |    +--- com.github.docker-java:docker-java-transport:3.3.2
+|    |    |    +--- org.slf4j:slf4j-api:1.7.30 -> 2.0.7
+|    |    |    +--- commons-io:commons-io:2.6
+|    |    |    +--- org.apache.commons:commons-compress:1.21
+|    |    |    +--- org.apache.commons:commons-lang3:3.12.0
+|    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.10.3
+|    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.10.3
+|    |    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.10.3
+|    |    |    +--- com.google.guava:guava:19.0 -> 33.2.0-jre (*)
+|    |    |    \--- org.bouncycastle:bcpkix-jdk15on:1.64
+|    |    |         \--- org.bouncycastle:bcprov-jdk15on:1.64
+|    |    \--- org.slf4j:jcl-over-slf4j:1.7.30
+|    |         \--- org.slf4j:slf4j-api:1.7.30 -> 2.0.7
+|    +--- com.github.docker-java:docker-java-transport-httpclient5:3.3.2
+|    |    +--- com.github.docker-java:docker-java-transport:3.3.2
+|    |    +--- org.apache.httpcomponents.client5:httpclient5:5.0.3 -> 5.2.1
+|    |    |    +--- org.apache.httpcomponents.core5:httpcore5:5.2
+|    |    |    +--- org.apache.httpcomponents.core5:httpcore5-h2:5.2
+|    |    |    |    \--- org.apache.httpcomponents.core5:httpcore5:5.2
+|    |    |    \--- org.slf4j:slf4j-api:1.7.36 -> 2.0.7
+|    |    \--- net.java.dev.jna:jna:5.12.1
+|    +--- org.brotli:dec:0.1.2
+|    +--- org.apache.commons:commons-lang3:3.12.0
+|    \--- org.apache.httpcomponents.client5:httpclient5:5.2.1 (*)
+\--- org.testng:testng:7.8.0
+     +--- org.slf4j:slf4j-api:1.7.36 -> 2.0.7
+     +--- com.beust:jcommander:1.82
+     \--- org.webjars:jquery:3.6.1
+
+(c) - A dependency constraint, not a dependency. The dependency affected by the constraint occurs elsewhere in the tree.
+(*) - Indicates repeated occurrences of a transitive dependency subtree. Gradle expands transitive dependency subtrees only once per project; repeat occurrences only display the root of the subtree, followed by this annotation.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 4s
+1 actionable task: 1 executed
+Configuration cache entry reused.

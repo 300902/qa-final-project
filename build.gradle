@@ -5,3 +5,49 @@
  * Learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.14/samples
  * This project uses @Incubating APIs which are subject to change.
  */
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testImplementation 'io.cucumber:cucumber-java:7.15.0'
+    testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.15.0'
+    testImplementation 'io.rest-assured:rest-assured:5.3.2'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
+    testImplementation 'org.testng:testng:7.8.0'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperties = System.properties
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+// Configuration for Cucumber tests
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+// Task to run Cucumber tests
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'src/test/java', 'src/test/resources']
+        }
+    }
+}
