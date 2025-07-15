@@ -39,5 +39,6 @@ test {
         events "passed", "skipped", "failed"
         exceptionFormat "full"
     }
+    systemProperty "cucumber.plugin", "html:build/reports/cucumber/cucumber-report.html,json:build/reports/cucumber/cucumber-report.json"
 }
 

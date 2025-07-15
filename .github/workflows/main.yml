@@ -1,0 +1,32 @@
+name: QA Automation CI
+on:
+  push:
+    branches: [ main, feature/* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Run Gradle tests
+        run: ./gradlew test --tests "*RunCucumberTest" -Dcucumber.filter.tags="@web"
+      - name: Upload Cucumber HTML Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report
+          path: build/reports/cucumber/cucumber-report.html
+      - name: Upload Cucumber JSON Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report-json
+          path: build/reports/cucumber/cucumber-report.json
