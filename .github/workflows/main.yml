@@ -23,12 +23,12 @@ jobs:
       - name: Run Gradle API tests
         run: ./gradlew test --tests "*RunCucumberTest" -Dcucumber.filter.tags="@api"
       - name: Upload Cucumber API HTML Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cucumber-report-api
           path: build/reports/cucumber/cucumber-report.html
       - name: Upload Cucumber API JSON Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cucumber-report-api-json
           path: build/reports/cucumber/cucumber-report.json
@@ -49,12 +49,12 @@ jobs:
       - name: Run Gradle Web UI tests
         run: ./gradlew test --tests "*RunCucumberTest" -Dcucumber.filter.tags="@web"
       - name: Upload Cucumber Web HTML Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cucumber-report-web
           path: build/reports/cucumber/cucumber-report.html
       - name: Upload Cucumber Web JSON Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cucumber-report-web-json
           path: build/reports/cucumber/cucumber-report.json
