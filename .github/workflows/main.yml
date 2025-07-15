@@ -1,12 +1,39 @@
+jobs:
 name: QA Automation CI
 on:
+  workflow_dispatch:
   push:
     branches: [ main, feature/* ]
   pull_request:
     branches: [ main ]
 
-jobs:
-  test:
+
+  test-api:
+    name: API Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Run Gradle API tests
+        run: ./gradlew test --tests "*RunCucumberTest" -Dcucumber.filter.tags="@api"
+      - name: Upload Cucumber API HTML Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report-api
+          path: build/reports/cucumber/cucumber-report.html
+      - name: Upload Cucumber API JSON Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report-api-json
+          path: build/reports/cucumber/cucumber-report.json
+
+  test-web:
+    name: Web UI Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -18,15 +45,15 @@ jobs:
           distribution: 'temurin'
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
-      - name: Run Gradle tests
+      - name: Run Gradle Web UI tests
         run: ./gradlew test --tests "*RunCucumberTest" -Dcucumber.filter.tags="@web"
-      - name: Upload Cucumber HTML Report
+      - name: Upload Cucumber Web HTML Report
         uses: actions/upload-artifact@v3
         with:
-          name: cucumber-report
+          name: cucumber-report-web
           path: build/reports/cucumber/cucumber-report.html
-      - name: Upload Cucumber JSON Report
+      - name: Upload Cucumber Web JSON Report
         uses: actions/upload-artifact@v3
         with:
-          name: cucumber-report-json
+          name: cucumber-report-web-json
           path: build/reports/cucumber/cucumber-report.json
