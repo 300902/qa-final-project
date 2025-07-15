@@ -22,6 +22,13 @@ dependencies {
     testImplementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
     testImplementation 'org.testng:testng:7.8.0'
+    // Web UI dependencies
+    implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
+    testImplementation 'io.cucumber:cucumber-java:7.15.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.15.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
     testImplementation 'org.junit.platform:junit-platform-suite:1.10.1'
 }
 
