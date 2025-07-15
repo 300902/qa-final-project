@@ -6,7 +6,7 @@ yarn-error.log*
 
 # Production builds
 dist/
-build/
+build
 out/
 
 # Environment variables
@@ -126,3 +126,6 @@ reports/
 
 # Ignore Gradle build output directory
 build
+*.class
+*.html
+*.json
