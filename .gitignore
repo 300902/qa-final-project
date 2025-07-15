@@ -103,7 +103,7 @@ venv.bak/
 
 # Java
 *.class
-*.jar
+# *.jar
 *.war
 *.ear
 *.zip
