@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.*;
 public class UserStepDefinitions {
     private Response response;
     private final String BASE_URL = "https://dummyapi.io/data/v1";
-    private final String APP_ID = "63a804408eb0cb069b57e43a";
+    private final String APP_ID = "65a4d18c66fca579a2a26919";
     private String userId;
 
     static {

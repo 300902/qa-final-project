@@ -6,7 +6,7 @@ Feature: Place Order Demoblaze
   @web
   Scenario: Place order after adding product to cart
     Given I am on the Demoblaze homepage
-    When I select product "Samsung galaxy s6"
+    When I select product "Samsung Galaxy S6"
     And I add the product to the cart
     And I go to the cart
     And I click Place Order

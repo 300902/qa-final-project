@@ -1,11 +1,11 @@
-package com.qa.test;
-
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 import org.testng.Assert;
 
 /**
  * TestNG specific verification test
  */
+@Listeners({org.testng.reporters.TestHTMLReporter.class})
 public class TestNGVerificationTest {
     
     @Test
